@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 class dota2_senate {
     public String predictPartyVictory(String senate) {
         Queue<Integer> qr = new LinkedList<>();
