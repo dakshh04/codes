@@ -10,5 +10,15 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class loops1 {    
-}
+public class loops1 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        for(int i = 1; i <= 10; i++){
+            System.out.println(N + " x " + i + " = " + N*i);
+        }
+
+        bufferedReader.close();
+    }
+}  
