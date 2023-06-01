@@ -1,6 +1,10 @@
+// Start
 import java.io.*;
+import java.util.*;
 
+//Public Class
 public class static_block{
+    // Main Function
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int B = input.nextInt();
@@ -18,3 +22,4 @@ public class static_block{
         }
     }
 }
+//END
