@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class static_block{
     public static void main(String[] args) {
