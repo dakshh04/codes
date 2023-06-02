@@ -2,6 +2,7 @@ import java.util.*;
 import java.security.*;
 public class Int_to_String {
  public static void main(String[] args) {
+
 // DoNotTerminate Class on line 28
   DoNotTerminate.forbidExit();
 
@@ -12,13 +13,14 @@ public class Int_to_String {
 
    String s = String.valueOf(n);
 
-   
    if (n == Integer.parseInt(s)) {
     System.out.println("Good job");
-   } else {
+   } 
+   else {
     System.out.println("Wrong answer.");
    }
-  } catch (DoNotTerminate.ExitTrappedException e) {
+  }
+  catch (DoNotTerminate.ExitTrappedException e) {
    System.out.println("Unsuccessful Termination!!");
   }
  }
@@ -44,4 +46,3 @@ class DoNotTerminate {
   System.setSecurityManager(securityManager);
  }
 }
-
