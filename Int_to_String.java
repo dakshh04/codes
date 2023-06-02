@@ -9,3 +9,5 @@ public class Int_to_String {
    Scanner in = new Scanner(System.in);
    int n = in .nextInt();
    in.close();
+
+   String s = String.valueOf(n);
