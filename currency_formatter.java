@@ -24,7 +24,3 @@ public class currency_formatter {
         System.out.println("France: " + france);
     }
 }
-
-class Solution {
-    int h = 10;
-}
