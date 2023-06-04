@@ -3,6 +3,8 @@ import java.util.Calendar;
 import java.util.Date; 
 import java.time.LocalDate; 
 import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 class Result {
 
@@ -22,11 +24,7 @@ class Result {
 
 }
 
-public class date_time {
-    
-}
-
-public class Solution {
+public class date_time implements date_timeEscape {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
