@@ -5,11 +5,6 @@ import java.math.*;
 import java.util.regex.*;
 
 public class currency_formatter {
-    
-}
-
-public class Solution {
-    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
@@ -28,4 +23,8 @@ public class Solution {
         System.out.println("China: " + china);
         System.out.println("France: " + france);
     }
+}
+
+class Solution {
+    int h = 10;
 }
