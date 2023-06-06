@@ -8,6 +8,7 @@ import java.util.*;
 
 // Stating main class
 public class substring {
+    // Starting main function
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String S = in.next();
