@@ -5,6 +5,8 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.*;
 
+
+// Stating main class
 public class substring {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
