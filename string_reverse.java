@@ -6,5 +6,8 @@ public class string_reverse{
         
         Scanner sc=new Scanner(System.in);
         String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        
+        
     }
 }
