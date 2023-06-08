@@ -1,5 +1,7 @@
+// import statements
 import java.util.Scanner;
 import java.util.regex.*;
+
 
 public class syntax_checker {
     public static void main(String[] args){
