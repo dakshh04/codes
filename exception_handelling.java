@@ -1,5 +1,6 @@
 import java.util.*;
 
+// calculator class
 class MyCalculator {
     public long power(int n, int p) throws Exception{
         if(n == 0 && p == 0) throw new Exception("n and p should not be zero.");
@@ -8,6 +9,7 @@ class MyCalculator {
     }
 }
 
+// public class
 public class exception_handelling {
     public static final MyCalculator my_calculator = new MyCalculator();
     public static final Scanner in = new Scanner(System.in);
