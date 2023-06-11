@@ -12,9 +12,6 @@ class MyCalculator {
 }
 
 public class exception_handelling {
-    
-}
-ublic class Solution {
     public static final MyCalculator my_calculator = new MyCalculator();
     public static final Scanner in = new Scanner(System.in);
     
@@ -30,4 +27,7 @@ ublic class Solution {
             }
         }
     }
+}
+class Solution {
+    
 }
