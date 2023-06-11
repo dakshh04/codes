@@ -28,6 +28,3 @@ public class exception_handelling {
         }
     }
 }
-class Solution {
-    
-}
