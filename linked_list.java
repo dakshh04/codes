@@ -81,3 +81,5 @@ public static void main(String [ ] args){
     // K 
     int k = sc.nextInt();
 
+    // origibal LinkedList
+    
