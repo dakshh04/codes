@@ -78,3 +78,6 @@ public static void main(String [ ] args){
         linkedlist.addNode(data);
     }
 
+    // K 
+    int k = sc.nextInt();
+
