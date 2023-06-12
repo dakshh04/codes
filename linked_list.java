@@ -86,4 +86,7 @@ public static void main(String [ ] args){
    linkedlist.displayList(linkedlist.head);
     linkedlist.head = linkedlist.reverseIngroups(linkedlist.head, k);
 
-    
+    // Reversed LinkedList
+    System.out.println("Reversed LinkedList: ");
+    linkedlist.displayList(linkedlist.head);
+}
