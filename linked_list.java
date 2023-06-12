@@ -64,4 +64,17 @@ public void displayList(Node head){
     System.out.println();
 }
 
+public static void main(String [ ] args){
+    // create a scanner to get the value from the user 
+    Scanner sc = new Scanner(System.in);
+    LinkedList linkedlist = new LinkedList();
+
+    // get the ele N value 
+    int n= sc.nextInt();
+
+    // get the values from the user 
+    for(int i=0; i<n; i++){
+        int data = sc.nextInt();
+        linkedlist.addNode(data);
+    }
 
