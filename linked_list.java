@@ -31,9 +31,18 @@ class LinkedList{
 }
 
 public Node reverseIngroups(Node head, int k){
-        Node current = head;
-        Node prev = null;
-        Node next = null;
-        int count = 0;
+
+    Node current = head;
+    Node prev = null;
+    Node next = null;
+    int count = 0;
 
 // reverse the first K nodes
+
+    while(count < k && current != null){
+                next = current.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+                count++;
+    }
