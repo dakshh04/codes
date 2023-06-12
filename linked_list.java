@@ -29,3 +29,10 @@ class LinkedList{
         }
     }
 }
+
+public Node reverseIngroups(Node head, int k){
+        Node current = head;
+        Node prev = null;
+        Node next = null;
+        int count = 0;
+
