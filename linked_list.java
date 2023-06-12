@@ -82,8 +82,8 @@ public static void main(String [ ] args){
     int k = sc.nextInt();
 
     // origibal LinkedList
-     System.out.println("origibal LinkedList: ");
-   linkedlist.displayList(linkedlist.head);
+    System.out.println("origibal LinkedList: ");
+    linkedlist.displayList(linkedlist.head);
     linkedlist.head = linkedlist.reverseIngroups(linkedlist.head, k);
 
     // Reversed LinkedList
