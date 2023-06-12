@@ -36,3 +36,4 @@ public Node reverseIngroups(Node head, int k){
         Node next = null;
         int count = 0;
 
+// reverse the first K nodes
