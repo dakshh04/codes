@@ -37,7 +37,7 @@ public Node reverseIngroups(Node head, int k){
     Node next = null;
     int count = 0;
 
-// reverse the first K nodes
+    // reverse the first K nodes
 
     while(count < k && current != null){
                 next = current.next;
@@ -46,3 +46,22 @@ public Node reverseIngroups(Node head, int k){
                 current = next;
                 count++;
     }
+
+    // recursively reverse the remaining nodes
+    if(next != null){
+        head.next = reverseIngroups(next, k);
+    }
+
+    return prev;
+}
+
+public void displayList(Node head){
+    Node current = head;
+    while (current != null){
+        System.out.print(current.data + " ");
+        current = current.next;
+    }
+    System.out.println();
+}
+
+
