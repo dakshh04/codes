@@ -9,3 +9,6 @@ class Node {
         this.next = null;
     }
 }
+
+class LinkedList {
+    private Node head;
