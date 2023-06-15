@@ -36,4 +36,24 @@ class LinkedList {
             return;
         }
 
-        
+        if (head.data == data) {
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+        Node prev = null;
+        while (current != null && current.data != data) {
+            prev = current;
+            current = current.next;
+        }
+
+        if (current == null) {
+            // System.out.println("Element not found in the linked list.");
+            return;
+        }
+
+        prev.next = current.next;
+    }
+
+    
