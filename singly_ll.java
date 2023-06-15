@@ -12,3 +12,9 @@ class Node {
 
 class LinkedList {
     private Node head;
+
+    public LinkedList() {
+        this.head = null;
+    }
+
+    
