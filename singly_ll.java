@@ -77,4 +77,24 @@ class LinkedList {
         current.data = data;
     }
 
+    public void search(int data) {
+        if (head == null) {
+            // System.out.println("Linked list is empty.");
+            return;
+        }
+
+        Node current = head;
+        int index = 0;
+        while (current != null && current.data != data) {
+            current = current.next;
+            index++;
+        }
+
+        if (current == null) {
+            // System.out.println("Element not found in the linked list.");
+        } else {
+            System.out.println( index);
+        }
+    }
+
     
