@@ -129,4 +129,55 @@ public class singly_ll {
             // System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
 
-            
+            switch (choice) {
+                case 1:
+                    // System.out.print("Enter the element(s) to insert (space-separated): ");
+                    scanner.nextLine(); // Consume newline character
+                    String[] elements = scanner.nextLine().split(" ");
+                    for (String element : elements) {
+                        linkedList.insert(Integer.parseInt(element));
+                    }
+                    // System.out.println("Elements inserted successfully.");
+                    break;
+
+                case 2:
+                    // System.out.print("Enter the element(s) to delete (space-separated): ");
+                    scanner.nextLine(); // Consume newline character
+                    elements = scanner.nextLine().split(" ");
+                    for (String element : elements) {
+                        linkedList.delete(Integer.parseInt(element));
+                    }
+                    // System.out.println("Elements deleted successfully.");
+                    break;
+
+                case 3:
+                    // System.out.print("Enter the index of the element to update: ");
+                    int index = scanner.nextInt();
+                    // System.out.print("Enter the new data: ");
+                    int data = scanner.nextInt();
+                    linkedList.update(index, data);
+                    // System.out.println("Element updated successfully.");
+                    break;
+
+                case 4:
+                    // System.out.print("Enter the element to search: ");
+                    data = scanner.nextInt();
+                    linkedList.search(data);
+                    break;
+
+                case 5:
+                    linkedList.display();
+                    break;
+
+                case 6:
+                    // System.out.println("Exiting the program...");
+                    scanner.close();
+                    System.exit(0);
+
+                default:
+                    // System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+        }
+    }
+}
