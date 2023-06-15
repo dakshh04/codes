@@ -30,4 +30,10 @@ class LinkedList {
         }
     }
 
-    
+    public void delete(int data) {
+        if (head == null) {
+            // System.out.println("Linked list is empty.");
+            return;
+        }
+
+        
