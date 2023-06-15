@@ -56,4 +56,25 @@ class LinkedList {
         prev.next = current.next;
     }
 
+    public void update(int index, int data) {
+        if (head == null) {
+            // System.out.println("Linked list is empty.");
+            return;
+        }
+
+        Node current = head;
+        int count = 0;
+        while (current != null && count != index) {
+            current = current.next;
+            count++;
+        }
+
+        if (current == null) {
+            // System.out.println("Index out of range.");
+            return;
+        }
+
+        current.data = data;
+    }
+
     
