@@ -112,3 +112,21 @@ class LinkedList {
     }
 }
 
+public class singly_ll {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            // System.out.println("\nMENU");
+            // System.out.println("1. Insert");
+            // System.out.println("2. Delete");
+            // System.out.println("3. Update");
+            // System.out.println("4. Search");
+            // System.out.println("5. Display");
+            // System.out.println("6. Exit");
+
+            // System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+
+            
