@@ -14,6 +14,7 @@ class Solution {
 }
 
 //  hash table
+// implementing hash-maps
 // class Solution {
 //     public int[] twoSum(int[] nums, int target) {
 //         Map<Integer, Integer> numMap = new HashMap<>();
