@@ -1,8 +1,4 @@
 public class add_two {
-    
-}
-
-class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0); // creating an dummy list
         ListNode curr = dummy; // intialising an pointer
@@ -28,3 +24,4 @@ class Solution {
         return dummy.next; // return dummy.next bcz, we don't want the value we have consider in it intially!!
     }
 }
+    
