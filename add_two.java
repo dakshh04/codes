@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class add_two {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0); // creating an dummy list
@@ -23,5 +25,9 @@ public class add_two {
         }
         return dummy.next; // return dummy.next bcz, we don't want the value we have consider in it intially!!
     }
+
+    public static void main(String[] args) {
+        addTwoNumbers();
+    }
 }
-    
+
