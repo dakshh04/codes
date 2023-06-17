@@ -5,5 +5,7 @@ class UsernameValidator {
 }
 
 public class Solution {
+    private static final Scanner scan = new Scanner(System.in);
+    
     
 }
