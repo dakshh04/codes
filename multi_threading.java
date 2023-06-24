@@ -32,4 +32,9 @@ public class multi_threading {
         }
     }
 
+    public static void main(String[] args) {
+        new A ().start();
+        new B ().start();
+        new C ().start();
+    }
 }
