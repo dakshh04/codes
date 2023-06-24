@@ -18,4 +18,18 @@ public class multi_threading {
         }
     }
 
+    static class C extends Thread{
+        public void run(){
+            for (int k = 1; k <= 5; k++) {
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    throw new RuntimeException(e);
+//                }
+                System.out.println("\t From Thread C : k = " + k);
+            }
+            System.out.println("Exit from C");
+        }
+    }
+
 }
