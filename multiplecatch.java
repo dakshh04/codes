@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class multiplecatch {
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Enter a number: ");
             int num = scanner.nextInt();
@@ -15,4 +16,5 @@ public class multiplecatch {
             scanner.close();
             System.out.println("Scanner closed.");
         }
+    }
 }
