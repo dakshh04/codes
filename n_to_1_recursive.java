@@ -15,7 +15,6 @@ import java.util.*;
 
 // Recursion Method
 class n_to_1_recursive{
-
     static void printNto1(int n){
         if (n ==0 ){
             System.out.println("0 value");
