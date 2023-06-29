@@ -1,3 +1,4 @@
+// 1.LeetCode(Easy)
 // brute force
 class Solution {
     public int[] twoSum(int[] nums, int target) {
