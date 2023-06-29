@@ -118,45 +118,45 @@ public class singly_ll {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            // System.out.println("\nMENU");
-            // System.out.println("1. Insert");
-            // System.out.println("2. Delete");
-            // System.out.println("3. Update");
-            // System.out.println("4. Search");
-            // System.out.println("5. Display");
-            // System.out.println("6. Exit");
+            System.out.println("\nMENU");
+            System.out.println("1. Insert");
+            System.out.println("2. Delete");
+            System.out.println("3. Update");
+            System.out.println("4. Search");
+            System.out.println("5. Display");
+            System.out.println("6. Exit");
 
-            // System.out.print("Enter your choice: ");
+            System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
-                    // System.out.print("Enter the element(s) to insert (space-separated): ");
+                    System.out.print("Enter the element(s) to insert (space-separated): ");
                     scanner.nextLine(); // Consume newline character
                     String[] elements = scanner.nextLine().split(" ");
                     for (String element : elements) {
                         linkedList.insert(Integer.parseInt(element));
                     }
-                    // System.out.println("Elements inserted successfully.");
+                    System.out.println("Elements inserted successfully.");
                     break;
 
                 case 2:
-                    // System.out.print("Enter the element(s) to delete (space-separated): ");
+                    System.out.print("Enter the element(s) to delete (space-separated): ");
                     scanner.nextLine(); // Consume newline character
                     elements = scanner.nextLine().split(" ");
                     for (String element : elements) {
                         linkedList.delete(Integer.parseInt(element));
                     }
-                    // System.out.println("Elements deleted successfully.");
+                    System.out.println("Elements deleted successfully.");
                     break;
 
                 case 3:
-                    // System.out.print("Enter the index of the element to update: ");
+                    System.out.print("Enter the index of the element to update: ");
                     int index = scanner.nextInt();
-                    // System.out.print("Enter the new data: ");
+                    System.out.print("Enter the new data: ");
                     int data = scanner.nextInt();
                     linkedList.update(index, data);
-                    // System.out.println("Element updated successfully.");
+                    System.out.println("Element updated successfully.");
                     break;
 
                 case 4:
