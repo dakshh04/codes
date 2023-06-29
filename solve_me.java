@@ -4,11 +4,12 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class solve_me {
     
 
     static int solveMeFirst(int a, int b) {
-        sum = a + b;
+        int sum = a + b;
+        return sum;
     }
 
     public static void main(String[] args) {
