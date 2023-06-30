@@ -1,4 +1,5 @@
 class subset_sum{
+    // recursion solution
     static int count_subSets(int arr[], int n, int sum){
         if(n == 0){
             return (sum == 0) ?|: 0;
