@@ -1,3 +1,4 @@
+// To Do
 public class prefix_sum{
     static int arr [] = {2, 8, 3, 9, 6, 5, 4};
     static int n = arr.length;
