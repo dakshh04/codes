@@ -1,7 +1,6 @@
 public class search_infinite_arr {
 
     static int binarySearch(int arr[], int x, int l, int h){
-        int n = arr.length;
         int mid = (l+h)/2;
         while (h > l){
             if(arr[mid] == x){
