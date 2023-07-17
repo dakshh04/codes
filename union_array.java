@@ -13,26 +13,28 @@ public class union_array {
                 continue;
             }
             if(a[i] > b[j]){
+                System.out.print(b[j] + " ");
                 j++;
             }
             else if(a[i] < b[j]){
+                System.out.print(a[i] + " ");
                 i++;
             }
             else{
-                System.out.println(a[i]);
+                System.out.print(a[i] + " ");
                 i++;
                 j++;
             }
         }
         while(i < n){
             if(i > 0 && a[i] != a[i-1]){
-                System.out.println(a[i]);
+                System.out.print(a[i] + " ");
                 i++;
             }
         }
         while(j < m){
             if(j > 0 && b[j] != b[j-1]){
-                System.out.println(b[j]);
+                System.out.print(b[j] + " ");
                 j++;
             }
         }
