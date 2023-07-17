@@ -24,7 +24,7 @@ public class intersection_arrays {
 
     public static void main(String[] args) {
         int a[] = {10, 20, 20, 40, 60};
-        int b[] = {22, 20, 20, 20};
+        int b[] = {12, 20, 20, 20};
         intersection(a, b);
     }
 }
