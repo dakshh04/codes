@@ -19,4 +19,4 @@ public class insertion_sort{
         insertionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
-}   
+}
