@@ -1,5 +1,5 @@
 import java.io.*;
-public class GFG {
+public class matrix_boundary {
  
     public static void printBoundary(int a[][], int m,
                                      int n)
