@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class transpose_matrix {
     static void transpose(int arr[][], int n, int m){
         for(int i = 0; i < n; i++){
