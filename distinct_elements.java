@@ -1,16 +1,14 @@
-import java.util.HashSet;
+import java.util.*;
 
 public class distinct_elements {
-    static int count(int arr []){
-        HashSet<Integer> h = new HashSet<Integer>();
-        for(int i = 0; i < arr.length; i++){
-            h.add(arr[i]);
-        }
+    static int count(Integer arr []){
+        // Improved Effecient Implementation
+        HashSet<Integer> h = new HashSet<>(Arrays.asList(arr));
         return h.size();
     }
 
     public static void main(String[] args) {
-        int arr [] = {10, 20, 10, 20, 30};
+        Integer arr [] = {10, 20, 10, 20, 30};
         System.out.println(count(arr));
     }
 }
