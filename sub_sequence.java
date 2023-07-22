@@ -11,7 +11,7 @@ public class sub_sequence {
         }
         return (j == m);
     }
-
+    
     public static void main(String[] args) {
         String s1 = "datastructure";
         String s2 =  "tastru";
