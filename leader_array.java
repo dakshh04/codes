@@ -9,7 +9,12 @@ public class leader_array {
         list.add(leader);
         
         for(int i = n - 2; i >= 0; i--){
-            
+            if(arr[i] > leader){
+                leader = arr[i];
+                list.add(leader);
+            }
         }
+
+        Collections.reverse(list);
     }
 }
