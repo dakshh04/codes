@@ -9,11 +9,12 @@ class Node{
 
 public class reverseK_LL {
     static Node reverseKth(Node head, int k){
-        Node curr = head, first = curr, prev = null, prevFirst = null;
+        Node curr = head, prevFirst = null;
         boolean isFirstPass = true;
-        int count = 0;
         while(curr != null){
-            while(curr != null & count < k){
+            Node first = curr, prev = null;
+            int count = 0;
+            while(curr!= null && count < k){
                 Node next = curr.next;
                 curr.next = prev;
                 prev = curr;
