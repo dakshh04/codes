@@ -7,32 +7,31 @@ class Node{
     }
 }
 
-
-class reverseKth_LL{
-    recursive solution
+public class reverseK_LL {
     static Node reverseKth(Node head, int k){
-        if(head == null || head.next == null){
-            return head;
-        }
-        Node next = null;
-        Node curr = head;
-        Node prev = null;
+        Node curr = head, first = curr, prev = null, prevFirst = null;
+        boolean isFirstPass = true;
         int count = 0;
-        while(curr != null && count < k){
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-            count++;
+        while(curr != null){
+            while(curr != null & count < k){
+                Node next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
+                count++;
+            }
+            if(isFirstPass){
+                head = prev;
+                isFirstPass = false;
+            }
+            else{
+                prevFirst.next = prev;
+            }
+            prevFirst = first;
         }
-        
-        if(next != null){
-            Node restHead = reverseKth(next, k);
-            head.next = restHead;
-        }
-        return prev;
+        return head;
     }
-    
+
     static void printList(Node head){
         if(head == null || head.next == null) return;
         Node curr = head;
@@ -42,7 +41,7 @@ class reverseKth_LL{
         }
         System.out.println();
     }
-    
+
     public static void main(String [] args){
         Node head = new Node(10);
         head.next = new Node(20);
