@@ -43,6 +43,8 @@ public class pairWise_swap {
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
+        head.next.next.next.next.next = new Node(6);
+        head.next.next.next.next.next.next = new Node(7);
         printList(head);
         head = swapNodes(head);
         printList(head);
