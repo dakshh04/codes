@@ -39,6 +39,7 @@ class Main{
         System.out.println(curr.data);
     }
     
+    // only for sorted LL
     static void removeDup(Node head){
         Node curr = head;
         while(curr != null && curr.next != null){
