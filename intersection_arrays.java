@@ -15,7 +15,7 @@ public class intersection_arrays {
                 i++;
             }
             else{
-                System.out.println(a[i]);
+                System.out.print(a[i] + " ");
                 i++;
                 j++;
             }
@@ -23,8 +23,8 @@ public class intersection_arrays {
     }
 
     public static void main(String[] args) {
-        int a[] = {10, 20, 20, 40, 60};
-        int b[] = {12, 20, 20, 20};
+        int a[] = {12, 20, 20, 40, 60};
+        int b[] = {12, 20, 20, 40};
         intersection(a, b);
     }
 }
