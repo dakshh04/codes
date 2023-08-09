@@ -10,6 +10,7 @@ class Node{
 public class reverseK_LL {
     static Node reverseKth(Node head, int k){
         Node curr = head, prevFirst = null;
+        // why is prevFirst here??
         boolean isFirstPass = true;
         while(curr != null){
             Node first = curr, prev = null;
