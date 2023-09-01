@@ -17,5 +17,8 @@ class my_Stack{
 }
 
 public class stack_linkedlist {
-    
+    public static void main(String[] args) {
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(15);
+    }
 }
