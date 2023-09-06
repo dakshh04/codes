@@ -9,11 +9,13 @@ public class queueY{
             this.size = n;
         }
 
+        // isEmpty
         public static boolean isEmpty(){
             return rear == -1;
         }
 
-        public static void add(int data){
+        // enque
+        public static void enque(int data){
             if(rear==size - 1){
                 System.out.println("Full");
                 return;
@@ -23,7 +25,22 @@ public class queueY{
             arr[rear] = data;
         }
 
+        // deque
+        public static int deque(){
+            if(isEmpty()){
+                System.out.println("Empty");
+                return -1;
+            }
 
+            int front = arr[0];
+            for(int i = 0; i < rear; i++){
+                arr[i] = arr[i+1];
+            }
+
+            rear--;
+            return front;
+        }
+        
     }
 
     public static void main(String [] args){
