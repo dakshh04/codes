@@ -1,4 +1,4 @@
-public class queueY{
+public class QueueY{
     static class Queue{
         static int arr[];
         static int size;
@@ -40,10 +40,28 @@ public class queueY{
             rear--;
             return front;
         }
-        
+
+        public static int peek(){
+            if(isEmpty()){
+                System.out.println(("Empty"));;
+                return -1;
+            }
+
+            return arr[0];
+        }
     }
 
     public static void main(String [] args){
+        Queue q = new Queue(5);
+        q.enque(1);
+        q.enque(2);
+        q.enque(3);
+        q.enque(4);
+        q.enque(5);
 
+        while(!q.isEmpty()){
+            System.out.println(q.peek());
+            q.deque();
+        }
     }
 }
