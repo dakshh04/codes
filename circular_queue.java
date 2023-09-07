@@ -43,13 +43,15 @@ public class circular_queue {
                 return -1;
             }
 
-            int front = arr[0];
-            for(int i = 0; i < rear; i++){
-                arr[i] = arr[i+1];
+            int res = arr[front];
+            // single element condition
+            if(rear == front){
+                rear = front = -1;
             }
-
-            rear--;
-            return front;
+            else{
+                front = (front + 1) % size;
+            }
+            return res;
         }
 
         public static int peek(){
@@ -58,7 +60,7 @@ public class circular_queue {
                 return -1;
             }
 
-            return arr[0];
+            return arr[front];
         }
     }
 }
