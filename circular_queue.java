@@ -15,14 +15,24 @@ public class circular_queue {
             return rear == -1 && front == -1;
         }
 
+        // isFull
+        public static boolean isFull(){
+            return (rear+1) % size == front;
+        }
+
         // enque
         public static void enque(int data){
-            if(rear==size - 1){
+            if(isFull()){
                 System.out.println("Full");
                 return;
             }
 
-            rear++;
+            // first element add
+            if(front == -1){
+                front = 0;
+            }
+
+            rear = (rear + 1) % size;
             arr[rear] = data;
         }
 
