@@ -1,4 +1,3 @@
-// import statements
 import java.util.Scanner;
 import java.util.regex.*;
 
