@@ -14,9 +14,4 @@ public class binary_search_rec {
         }
         return -1;
     }
-
-    public static void main(String[] args) {
-        int arr [] = {2, 4, 7, 9, 10, 13, 16, 17, 21};
-        System.out.println(binarySearch(arr, 9, 0, 8));
-    }
 }
